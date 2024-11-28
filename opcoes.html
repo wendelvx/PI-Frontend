@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSound</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/config.css">
+</head>
+
+<body>
+    <header> 
+                <h1>SafeSound</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="relatorio.html">Relatórios</a></li>
+                        <li><a href="opcoes.html">Opções</a></li>
+                    </ul>
+                </nav>
+    </header>
+
+    <main class="SafeSoundConfiguracao">
+        <section class="configuracaoGeral">
+            <h2>Opções Gerais</h2>
+            <form>
+                <div class="formulario">
+                    <h3 class="titulo">Adicionar Novo Ambiente</h3>
+                    <label for="nomeambiente">Nome Do Ambiente</label>
+                    <input type="text" id="nomeambiente">
+                    <label for="">Nível de sensibilidade do sensor(dB/Padrão:50dB)</label>
+                    <input type="number" value="50" id="sensibilidadesom"  min="1" max="80">                   
+                </div>
+                <div class="formulario">
+                    <label for="intervalo">Intervalo de verificação (minutos/Padrão:1 Minuto)</label>
+                    <input type="number" value="1" id="intervalo" name="intervalo" min="1" max="60">
+                </div>
+                <div class="formulario">
+                    <div class="secaonotificar">
+                        <label for="notificacoes">Permitir Alertas</label>
+                        <input type="checkbox" id="notificacoes">
+                    </div>
+                    
+                    <button type="submit">Adicionar</button>
+                </div>
+            </form>
+            <form action="">
+                <div class="formulario">
+                    <h3 class="titulo">Remover Ambiente</h3>
+                   <select name="" id="opcoes">
+                    <option value="UTI">UTI</option>
+                    <option value="Emergência">Emergência</option>
+                    <option value="Enfermaria">Enfermaria</option>
+                    <option value="Cirurgia">Cirurgia</option>
+                    <option value="repouso">Sala de Repouso</option>
+                   </select>
+                   <button type="submit">Remover</button>
+                </div>
+            </form>
+            <form>
+                <div class="formulario">
+                    <h3 class="titulo">Alterar Configurações Do Ambiente</h3>
+                    <div class="separar">
+                        <label for="">Alterar em</label>
+                        <select name="" id="todosambientes">
+                            <option value="Todos">Todos</option>
+                            <option value="UTI">UTI</option>
+                            <option value="Emergência">Emergência</option>
+                            <option value="Enfermaria">Enfermaria</option>
+                            <option value="Cirurgia">Cirurgia</option>
+                            <option value="repouso">Sala de Repouso</option>
+                        </select>
+                    </div>
+                    <div class="ajustedesensor">
+                        <label for="">Sensibilidade Do Sensor</label>
+                    <input type="number"  value="50" id="sensibilidadesom"  min="1" max="80"> 
+                    </div> 
+                    <div class="secaonotificar">
+                        <label for="notificacoes">Permitir Alertas</label>
+                        <input type="checkbox" id="notificacoes">
+                    </div>      
+                    <button type="submit">Alterar</button>             
+                </div>
+            </form>
+        </section>
+        <section class="Configuracaosensor">
+            <h2>Configuração dos Sensores</h2>
+            <section class="sensor-connection">
+                <h3>Conexão dos Sensores</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nome do Sensor</th>
+                      <th>Status</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sensor(UTI)</td>
+                      <td><span class="status online">Conectado</span></td>
+                      <td>
+                        <button class="configure-button" onclick="configSensor('Sensor 1')">Configurar</button>
+
+                        <button class="btn-restart" onclick="restartSensor('Sensor 1')">Reiniciar</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sensor(Emergência)</td>
+                      <td><span class="status offline">Desconectado</span></td>
+                      <td>
+                        <button class="configure-button" onclick="configSensor('Sensor 2')" disabled>Configurar</button>
+                        
+                        <button class="btn-restart" onclick="restartSensor('Sensor 2')">Reiniciar</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </section>
+          
+            <section class="pairing-section">
+                  <h3>Pareamento de Dispositivos</h2>
+                    <div class="container">
+                        <button id="scanDevicesButton">Buscar dispositivos</button>
+                        <div class="sensor-container hidden">
+                            <div class="sensor">
+                                <div id="sensor1">Sensor 1 (ID: 001)</div>
+                                <button id="connectSensor1">Conectar</button>
+                            </div>
+                            <div class="sensor">
+                                <div id="sensor2">Sensor 2 (ID: 002)</div>
+                                <button id="connectSensor2">Conectar</button>
+                            </div>
+                        </div>
+                
+                        <div id="deviceSection" class="hidden">
+                            <h2>Ambientes Disponíveis</h2>
+                            <ul id="deviceList">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="device" value="UTI2"> UTI2
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="device" value="Cirurgia2"> Cirurgia2
+                                    </label>
+                                </li>
+                            </ul>
+                            <button id="pairButton" disabled>Emparelhar</button>
+                            <p id="statusMessage"></p>
+                        </div>
+                    </div>
+            </section>
+        </section>
+
+        <section class="ConfiguracaoUsuario">
+            <h2 class="titulo">Configurações Do Usuário</h2>
+        
+            <div class="user-row">
+                <div class="info-block">
+                    <label for="">Nome de usuário</label>
+                    <p>David Batista</p>
+                </div>
+                <div class="info-block">
+                    <label for="">E-mail</label>
+                    <p>brasil@unifapce.edu.br</p>
+                </div>
+                <div class="info-block">
+                    <label for="">Telefone</label>
+                    <p>+558890000000</p>
+                </div>
+                <button class="btnalterar">Alterar</button>
+            </div>
+            
+            <a href="login.html">
+                <button class="btnlogout">Logout</button>
+            </a>
+            
+        </section>
+        
+
+    </main>
+ <footer class="SafeSoundFooter">
+        <p>©Todos direitos reservados.</p>
+</footer>
+<script src="js/mobile-navbar.js"></script>
+<script src="js/scriptrelatorio.js"></script>
+
+
+
+</body>
+
+</html>

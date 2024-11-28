@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSound</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="SafeSoundLogo">
+            <h1>SafeSound</h1>
+            
+        </div>
+        <nav>
+          <ul>
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="relatorio.html">Relatórios</a></li>
+              <li><a href="opcoes.html">Opções</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="SafeSoundMain">
+        <section class="SafeSoundAlerta">
+            <h1>Alertas e Incidentes</h1>
+            <div class="notificacoesurgentes">
+              <h2>Notificações Urgentes</h2>
+              <div class="card1">
+                <div class="notificacao">⚠️ Emergência: Nível de ruído elevado há mais de 3 minutos!</div>
+                <div class="notificacao">⚠️ Atenção: Picos de ruído detectados na UTI!</div>
+              </div>
+            </div>
+            
+            <table class="tabelaalerta">
+              <thead>
+                <tr>
+                  <th>Hora</th>
+                  <th>Ambiente</th>
+                  <th>Ruído</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15:30</td>
+                  <td>UTI</td>
+                  <td>54 dB</td>
+                  <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>14:37</td>
+                    <td>Emergência</td>
+                    <td>42 dB</td>
+                    <td>Moderado</td>
+                  </tr>
+                <tr>
+                  <td>10:15</td>
+                  <td>Enfermagem</td>
+                  <td>63 dB</td>
+                  <td>Alto</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          
+        <div class="SafeSoundDashboard">
+            <section class="DashboardPainel">
+                <div class="DashboardVolume">
+                    <div class="DashboardVolumeFinal">
+                        <label for="">80dB-</label>
+                        <label for="">70dB-</label>
+                    </div>
+                    <label for="">60dB-</label>
+                    <label for="">55dB-</label>
+                    <label for="">50dB-</label>
+                    <label for="">45dB-</label>
+                    <label for="">40dB-</label>
+                    <label for="">35dB-</label>
+                    <label for="">30dB-</label>
+                    <label for="">25dB-</label>
+                    <label for="">20dB-</label>
+                    <label for="">15dB-</label>
+                    <label for="">10dB-</label>
+                    <label for="">5dB-</label>
+                    <label for="">0dB-</label>
+                </div>
+                <div class="DashboardAmbiente">
+                    <div class="AmbienteUTI">
+                        <div class="UTI"></div>
+                        <label for="">UTI</label>
+                    </div>
+                    <div class="AmbienteEmergencia">
+                        <div class="Emergencia"></div>
+                        <label for="">Emergência</label>
+                    </div>
+                    <div class="AmbienteEnfermagem">
+                        <div class="Enfermagem"></div>
+                        <label for="">Enfermaria</label>
+                    </div>
+                    <div class="AmbienteCirurgia">
+                        <div class="Cirurgia"></div>
+                        <label for="">Cirurgia</label>
+                    </div>
+    
+                </div>
+            </section>
+            <h2>Nivel de Ruído por Ambiente</h2>
+        </div>
+        <section class="SafeSoundStatus">
+            <h1>Status</h1>
+            <div class="card">
+            <h2>UTI:<strong>Online✅</strong>/Offline</h2>
+            <h2>Emergência:<strong>Online✅</strong>/Offline</h2>
+            <h2>Enfermaria:<strong>Online✅</strong>/Offline</h2>
+            <h2>Cirurgia:<strong>Online✅</strong>/Offline</h2>
+            <h2 class="StatusOffline">Sala de repouso:Online/<strong class="offline">Offline❌</strong>
+              <p class="not-conexao">Falha no sensor de ruído.</p></h2>
+            </div>
+            
+        </section>
+       
+    </main>
+    <footer class="SafeSoundFooter">
+            <p>©Todos direitos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="js/mobile-navbar.js"></script>
+</body>
+</html>

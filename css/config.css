@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Yusei+Magic&display=swap');
+body {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1968px;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #6045ce;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.titulo {
+    text-align: center;
+    color: #6045ce;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label {
+    font-weight: 400;
+}
+
+.configuracaoGeral {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ConfiguracaoUsuario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SafeSoundConfiguracao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    padding: 20px;
+}
+
+@media(max-width:580px) {
+    header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#nomeambiente, #sensibilidadesom, #intervalo, #opcoes, #todosambientes {
+    padding: 5px;
+    border: 2px solid #6045ce;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+#nomeambiente {
+    width: 170px;
+}
+
+#sensibilidadesom, #intervalo {
+    width: 60px;
+}
+
+#opcoes {
+    width: 135px;
+}
+
+button {
+    background-color: #6045ce;
+    color: #f4f4f4;
+    border: none;
+    align-self: start;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #3300fd33;
+    color: #6045ce;
+}
+
+.user-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.info-block label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-block p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.SafeSoundFooter p {
+    text-align: center;
+}
+
+.SafeSoundFooter {
+    background: brown;
+    margin-top: auto;
+}
+
+form {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    padding: 20px 50px;
+}
+
+
+
+
+
+.SafeSoundFooter p {
+    text-align: center;
+    margin-top: auto;
+}
+
+.sensor-connection,
+.pairing-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    align-items: center;
+}
+
+h2 {
+    border-bottom: 2px solid #6045ce;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status.online {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.offline {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.configure-button,
+.btn-restart {
+    background-color: #6045ce;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.configure-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-restart {
+    background-color: #dc3545;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #6045ce;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #3300fd33;
+    color: #6045ce;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+
+.sensor-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sensor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    
+}
+
+button {
+    background-color: #6045ce;
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #3e32a8;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #6045ce;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+.Configuracaosensor{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:645px){
+    .SafeSoundConfiguracao{
+        align-items: flex-start;
+    }
+    .Configuracaosensor{
+        align-self: flex-start;
+        font-size: 14px;
+    }
+    .Configuracaosensor .configure-button{
+        font-size: 14px;
+    }
+    .Configuracaosensor .btn-restart{
+        font-size: 14px;
+    }
+}
+@media(max-width:465px){
+    .SafeSoundConfiguracao{
+        padding-left: 2px;
+    }
+
+}
+@media(max-width:442px){
+    .Configuracaosensor{
+        align-self: start;
+    }
+    .sensor-connection{
+        font-size:10px;
+    }
+    .sensor-connection .configure-button{
+        font-size:10px;
+        width: 70px;
+    }
+    .sensor-connection .btn-restart{
+        font-size:10px;
+        width: 70px;
+    }
+}

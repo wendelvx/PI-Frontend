@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Yusei+Magic&display=swap');
+body{
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:50px;
+    max-width: 1968px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #6045ce;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.principalconteudo{
+    display: flex;
+}
+.selecao2{
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 6px;
+}
+.volumealto{
+    color: red;
+}
+.volumemoderado{
+    color: yellow;
+}
+.volumeotimo{
+    color: green;
+}
+header ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.conteudografico{
+    display: flex;   
+}
+.conteudo3 .filtro input{
+    width: 40px;
+}
+@media(max-width:1050px){
+    .relatorio1{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo1 .relatorio1{
+        gap: 15px;
+    }
+    .relatorio1 .conteudografico{
+        border-bottom: 3px solid aquamarine;
+    }
+    .relatorio1 .filtro{
+        gap: 15px;
+    }
+   
+    .relatorio1 .nivelsom{
+        gap: 23px;
+    }
+    .grafico3 .graficolinhas{
+        width: 366px;
+        height: 210px;
+        
+    }
+    .rotulo2 h2{
+        font-size: 15px;
+    }
+    
+    .principalconteudo{
+        border-bottom: 3px solid aquamarine;
+        width: 100%;
+    }
+    .conteudo3 .rotulo2{
+        border-bottom: 3px solid aquamarine;
+        padding: 10px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .rotulohoras .divisaorotulo{
+        font-size: 10px;
+    }
+    .grafico3 .rotulohoras{
+        gap: 5px;
+        margin-left: 6px;
+    }
+    .relatorio1 .grafico{
+        padding-left: 12px;
+    }
+    .relatorio1 .filtro .date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .relatorio1 .informacoes{
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        border-left: none;
+    }
+    .relatorio1 .informacoes p{
+        text-align: center;
+    }
+    .relatorio2 .informacoes p{
+        text-align: center;
+    }
+    .relatorio2 .informacoes{
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        border-left: none;
+    }
+    .relatorio2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .relatorio2 .media_baixar h3{
+        font-size: 16px;
+    }
+    .relatorio1 .media_baixar h3{
+        font-size: 16px;
+    }
+    .conteudo2 .rotulo2{
+        border-bottom: 3px solid aquamarine;
+        padding: 10px;
+    }
+    .conteudo2 .relatorio2{
+        gap: 15px;
+    }
+    .rotulo2 h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    .rotulo2 #escolhaambiente1{
+        font-size: 11px;
+        width: 105px;
+    }
+    .caixa .nivelsom2{
+        font-size: 12px;
+    }
+    .graficodia1 .dia1{
+        width: 10px;
+        height: 142px;
+        font-size: 10px;
+    }
+    .graficodia2 .dia2{
+        width: 10px;
+        height: 123px;
+        font-size: 10px;
+    }
+    .graficodia3 .dia3{
+        width: 10px;
+        height: 66px;
+        font-size: 10px;
+    }
+    .graficodia4 .dia4{
+        width: 10px;
+        height: 72px;
+        font-size: 10px;
+    }
+    .graficodia5 .dia5{
+        width: 10px;
+        height: 142px;
+        font-size: 10px;
+    }
+    .graficodia6 .dia6{
+        width: 10px;
+        height: 180px;
+        font-size: 10px;
+    }
+    .graficodia7 .dia7{
+        width: 10px;
+        height: 98px;
+        font-size: 10px;
+    }
+    .graficodia8 .dia8{
+        width: 10px;
+        height: 188px;
+        font-size: 10px;
+    }
+    .graficodia9 .dia9{
+        width: 10px;
+        height: 128px;
+        font-size: 10px;
+    }
+    .graficodia10 .dia10{
+        height: 42px;
+        width: 10px;
+        font-size: 10px;
+    }
+    .grafico2 label{
+        font-size: 10px;
+    }
+    .nivelsom2 .rotuloinferior{
+        margin-top: 8px;
+    }
+    .principal .media h2{
+        font-size: 20px;
+    }
+    
+}
+@media(max-width:345px){
+    .conteudo2 .grafico2 label{
+        font-weight: 400;
+    }
+    .principalconteudo{
+        padding-right: 30px;
+    }
+}
+@media(max-width:600px){
+    .relatorio1{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo1 .relatorio1{
+        gap: 15px;
+    }
+    .relatorio2 .conteudografico{
+        flex-direction: column;
+    }
+    header ul{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .relatorio2 .caixa{
+        border-left: none;
+    }
+    .conteudo1 .titulo{
+        font-size: 16px;
+    }
+    .conteudo2 .titulo{
+        font-size: 16px;
+    }
+    .conteudo3 .titulo{
+        font-size: 16px;
+    }
+    .conteudo3  .rotulohoras .divisaorotulo{
+        font-weight: 500;
+    }
+    .conteudo3 .graficolinhas{
+        width: 320px;
+    }
+
+    .caixa .grafico{
+        padding-left: 7px;
+    }
+    .relatorio2 .nivelsom2{
+        font-size: 8px;
+    }
+    .relatorio2 #escolhaambiente1{
+        width: 100px;
+        font-size: 12px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .conteudografico .nivelsom{
+        gap: 3px;
+        font-size:10px;
+    }
+    .informacoes{
+        justify-content: center;
+    }
+    .grafico .retangulouti{
+        width: 78px;
+    }
+    .grafico .retangulocirurgia{
+        width: 73px;
+    }
+    .grafico .retanguloemergencia{
+        width: 168px;
+    }
+    .grafico .retanguloenfermagem{
+        width: 103px;
+    }
+    .graficodia1 .dia1{
+        width: 7px;
+        height: 118px;
+        font-size: 7px;
+    }
+    .graficodia2 .dia2{
+        width:7px;
+        height: 98px;
+        font-size: 7px;
+    }
+    .graficodia3 .dia3{
+        width: 7px;
+        height: 52px;
+        font-size: 7px;
+    }
+    .graficodia4 .dia4{
+        width: 7px;
+        height: 56px;
+        font-size: 7px;
+    }
+    .graficodia5 .dia5{
+        width: 7px;
+        height: 113px;
+        font-size: 7px;
+    }
+    .graficodia6 .dia6{
+        width: 7px;
+        height: 138px;
+        font-size: 7px;
+    }
+    .graficodia7 .dia7{
+        width: 7px;
+        height: 76px;
+        font-size: 7px;
+    }
+    .graficodia8 .dia8{
+        width: 7px;
+        height: 153px;
+        font-size: 7px;
+    }
+    .graficodia9 .dia9{
+        width: 7px;
+        height: 103px;
+        font-size: 7px;
+    }
+    .graficodia10 .dia10{
+        height: 33px;
+        width: 7px;
+        font-size: 7px;
+    }
+    .grafico2 label{
+        font-size: 7px;
+    }
+    .conteudo3 .divisaorotulo{
+        font-size: 8px;
+    }
+    .conteudo3 .rotulohoras{
+        gap: 4px;
+    }
+    .conteudo3 .graficolinhas{
+        height: 172px;
+        width: 288px;
+    }
+}
+.relatorio1{
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    width: 95%;
+    align-self: center;
+}
+.rotulo1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.retangulouti{
+    height: 15px;
+    width: 184px;
+    background: green;
+}
+.grafico{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    padding-left: 12px;
+}
+.retanguloemergencia{
+    height: 15px;
+    width: 398px;
+    background: red;
+}
+.retanguloenfermagem{
+    height: 15px;
+    width: 246px;
+    background: yellow;
+}
+.retangulocirurgia{
+    height: 15px;
+    width: 178px;
+    background: green;
+}
+
+.caixa{
+    border-left: 3px solid aquamarine;
+}
+.nivelsom{
+    display: flex;
+    align-self: start;
+    gap:25px;
+}
+.valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.informacoes{
+    display: flex;
+    align-items: center;
+    border-left: 3px solid aquamarine;
+}
+.informacoes p{
+    font-weight: 500;
+}
+
+.media h2{
+    font-size: 25px;
+    text-align: center;
+}
+select{
+    width: 100px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+}
+.filtro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+    padding: 5px;
+}
+.selecao1{
+    display: flex;
+    gap: 10px;
+}
+.btn_buscar1{
+    background-color: #007BFF; 
+    border: 2px solid #5b9bd5; 
+    border-radius: 8px; 
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.media{
+    align-self: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+}
+.tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 300px;
+}
+
+.dowload_button{
+    width: 30px;
+    height: 30px;
+}
+.avaliacao{
+    color: yellow;
+    text-shadow:1px black;
+}
+.media_baixar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.media_baixar h3,.dowload h3{
+    font-weight: 400;
+}
+.dowload{
+    display: flex;
+}
+.rotulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    gap:60px ;
+}
+.rotulo2 select{
+    padding: 10px;
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight:800;
+}
+.nivelsom2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+.grafico2{
+    align-self: flex-end;
+    font-size: small;
+    display: flex;
+    gap: 3px;
+}
+.dia1{
+    background: red;
+    height: 174px;
+    color: transparent;
+}
+.graficodia1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia2{
+    background: yellow;
+    height: 145px;
+    color: transparent;
+}
+.graficodia2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia3{
+    background: green;
+    height: 75px;
+    color: transparent;
+}
+.graficodia3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia4{
+    background: green;
+    height: 86px;
+    color: transparent;
+}
+.graficodia4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia5{
+    background: red;
+    color: transparent;
+    height:170px;
+}
+.graficodia5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia6{
+    background: red;
+    color: transparent;
+    height:210px;
+}
+.graficodia6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia7{
+    background: green;
+    color: transparent;
+    height:110px;
+}
+.graficodia7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia8{
+    background: red;
+    color: transparent;
+    height:234px;
+}
+.graficodia8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia9{
+    background: yellow;
+    color: transparent;
+    height:149px;
+}
+.graficodia9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+.dia10{
+    background: green;
+    color: transparent;
+    height:48px;
+}
+.graficodia10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
+
+.dia1:hover{
+    color: black;
+}
+
+.dia2:hover{
+    color: black;
+}
+
+.dia3:hover{
+    color: black;
+}
+
+.dia4:hover{
+    color: black;
+}
+
+.dia5:hover{
+    color: black;
+}
+
+.dia6:hover{
+    color: black;
+}
+
+.dia7:hover{
+    color: black;
+}
+
+.dia8:hover{
+    color: black;
+}
+
+.dia9:hover{
+    color: black;
+}
+
+.dia10:hover{
+    color: black;
+}
+.conteudo2 strong{
+    color: green;
+}
+.rotulo2 h2{
+    font-weight: 500;
+}
+.relatorio2{
+    display: flex;
+    gap: 3px;
+    border-radius: 15px;    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    width: 95%;
+    align-self: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.conteudo2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.relatorio2 p{
+    width: 14px;
+    text-align: center;
+}
+.conteudo3 .nivelsom{
+    gap: 10px;
+}
+.graficohora{
+    width: 560px;
+}
+.grafico3{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 4px;
+}
+.grafico3 img{
+    width: 605px;
+}
+.rotulohoras{
+    display: flex;
+    gap: 10px;
+}
+.divisaorotulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graficolinhas{
+  
+    padding-left: 17px;
+}
+.conteudo3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer p{
+    text-align: center;
+}
+footer{
+    background: brown;
+    margin-top: auto;
+}
+.conteudo3 input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid #210e9c;
+    font-weight: 800;
+}
+#escolhaambiente1{
+    justify-self:  center;
+}
+.selecao1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+}
+.conteudo3 .filtro{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

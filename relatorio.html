@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSound</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/relatorio.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>SafeSound</h1>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="relatorio.html">Relatórios</a></li>
+                <li><a href="opcoes.html">Opções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="media">
+            <h2>Tabela média de ruido</h2>
+            <div class="tabela">
+                <p><strong class="volumealto">Alto</strong>:A partir de 50 dB</p>
+                <p><strong class="volumemoderado">Moderado</strong>:Entre 41dB a 49dB</p>
+                <p><strong class="volumeotimo">Òtimo</strong>:Até 40dB</p>
+            </div>
+        </section>
+        <section class="conteudo1">
+            <h2 class="titulo">Média De Nivel De Ruido Geral </h2>
+            <div class="relatorio1">
+                <div class="conteudografico">
+                    <div class="rotulo1">
+                        <label for="">UTI</label>
+                        <label for="">Emergência</label>
+                        <label for="">Enfermagem</label>
+                        <label for="">Cirugia</label>
+                    </div>
+                    <div class="caixa">
+                        <div class="grafico">
+                            <div class="retangulouti"></div>
+                            <label for="">34dB</label>
+                        </div>
+                        <div class="grafico">
+                            <div class="retanguloemergencia"></div>
+                            <label for="">69dB</label>
+                        </div>
+                        <div class="grafico">
+                            <div class="retanguloenfermagem"></div>
+                            <label for="">43dB</label>
+                        </div>
+                        <div class="grafico">
+                            <div class="retangulocirurgia"></div>
+                            <label for="">31dB</label>
+                        </div>
+                        <div class="nivelsom">
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">0dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">10dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">20dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">30dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">40dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">50dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">60dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">70dB</label>
+                            </div>
+                            <div class="valores">
+                                <p>|</p>
+                                <label for="">80dB</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media_baixar">
+                    <h3>Média: 44.25 / <strong class="avaliacao">Moderado</strong></h3>
+                    <div class="dowload">
+                        <h3>Baixar Relatório</h3>
+                        <figure>
+                            <a href=""><img class="dowload_button" src="img/dowload-1-svgrepo-com.svg" alt="dowload img">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="informacoes">
+                    <div class="filtro">
+                        <p>Filtrar por:</p>
+                        <div class="selecao2">
+                                <div class="date">
+                                    <label for="">Mês</label>
+                                    <select name="filtro1" id="filtro1">
+                                        <option value=""></option>
+                                        <option value="Janeiro">Janeiro</option>
+                                        <option value="Fevereiro">Fevereiro</option>
+                                        <option value="Março">Março</option>
+                                        <option value="Abril">Abril</option>
+                                        <option value="Maio">Maio</option>
+                                        <option value="Junho">Junho</option>
+                                        <option value="Julho">Julho</option>
+                                        <option value="Agosto">Agosto</option>
+                                        <option value="Setembro">Setembro</option>
+                                        <option value="Outubro">Outubro</option>
+                                        <option value="Novembro">Novembro</option>
+                                        <option value="Dezembro">Dezembro</option>
+                                    </select>
+                                </div>
+                                <div class="date">
+                                    <label for="">Ano</label>
+                                    <select name="filtro2" id="filtro2">
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                    </select>
+                                </div>
+                            
+                            
+                            
+                            <button class="btn_buscar1">Buscar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="conteudo2">
+            <h2 class="titulo">Média Mensal Detalhada De Nivel De Ruido Por Ambiente </h2>
+            <div class="relatorio2">
+                <div class="conteudografico">
+                    <div class="rotulo2">
+                        <h2>Filtrar por Ambiente</h2>
+                        <select name="" id="escolhaambiente1">
+                            <option value="Todos">Todos</option>
+                            <option value="UTI1">UTI</option>
+                            <option value="Emergencia1">Emergência</option>
+                            <option value="enfermagem1">Enfermagem</option>
+                            <option value="cirurgia1">Cirurgia</option>
+                        </select>
+                    </div>
+                    <div class="principalconteudo">
+                        <div class="caixa">
+                            <div class="nivelsom2">
+                                <label for="">80dB-</label>
+                                <label for="">70dB-</label>
+                                <label for="">60dB-</label>
+                                <label for="">50dB-</label>
+                                <label for="">40dB-</label>
+                                <label for="">30dB-</label>
+                                <label for="">20dB-</label>
+                                <label for="">10dB-</label>
+                                <label  for="">0dB-</label>
+                                <label class="rotuloinferior" for="">Dia</label>
+                            </div>
+                        </div>
+                        <div class="grafico2">
+                            <div class="graficodia1">
+                                <p class="dia1">51</p>
+                                <label for="">1</label>
+                            </div>
+                            <div class="graficodia2">
+                                <p class="dia2">43</p>
+                                <label for="">2</label>
+                            </div>
+                            <div class="graficodia3">
+                                <p class="dia3">22</p>
+                                <label for="">3</label>
+                            </div>
+                            <div class="graficodia4">
+                                <p class="dia4">25</p>
+                                <label for="">4</label>
+                            </div>
+                            <div class="graficodia5">
+                                <p class="dia5">50</p>
+                                <label for="">5</label>
+                            </div>
+                            <div class="graficodia6">
+                                <p class="dia6">63</p>
+                                <label for="">6</label>
+                            </div>
+                            <div class="graficodia7">
+                                <p class="dia7">33</p>
+                                <label for="">7</label>
+                            </div>
+                            <div class="graficodia8">
+                                <p class="dia8">68</p>
+                                <label for="">8</label>
+                            </div>
+                            <div class="graficodia9">
+                                <p class="dia9">45</p>
+                                <label for="">9</label>
+                            </div>
+                            <div class="graficodia10">
+                                <p class="dia10">14</p>
+                                <label for="">10</label>
+                            </div>
+                            <div class="graficodia1">
+                                <p class="dia1">51</p>
+                                <label for="">11</label>
+                            </div>
+                            <div class="graficodia2">
+                                <p class="dia2">43</p>
+                                <label for="">12</label>
+                            </div>
+                            <div class="graficodia3">
+                                <p class="dia3">22</p>
+                                <label for="">13</label>
+                            </div>
+                            <div class="graficodia4">
+                                <p class="dia4">25</p>
+                                <label for="">14</label>
+                            </div>
+                            <div class="graficodia5">
+                                <p class="dia5">50</p>
+                                <label for="">15</label>
+                            </div>
+                            <div class="graficodia6">
+                                <p class="dia6">63</p>
+                                <label for="">16</label>
+                            </div>
+                            <div class="graficodia7">
+                                <p class="dia7">33</p>
+                                <label for="">17</label>
+                            </div>
+                            <div class="graficodia8">
+                                <p class="dia8">68</p>
+                                <label for="">18</label>
+                            </div>
+                            <div class="graficodia9">
+                                <p class="dia9">45</p>
+                                <label for="">19</label>
+                            </div>
+                            <div class="graficodia10">
+                                <p class="dia10">14</p>
+                                <label for="">20</label>
+                            </div>
+                            <div class="graficodia1">
+                                <p class="dia1">51</p>
+                                <label for="">21</label>
+                            </div>
+                            <div class="graficodia2">
+                                <p class="dia2">43</p>
+                                <label for="">22</label>
+                            </div>
+                            <div class="graficodia3">
+                                <p class="dia3">22</p>
+                                <label for="">23</label>
+                            </div>
+                            <div class="graficodia4">
+                                <p class="dia4">25</p>
+                                <label for="">24</label>
+                            </div>
+                            <div class="graficodia5">
+                                <p class="dia5">50</p>
+                                <label for="">25</label>
+                            </div>
+                            <div class="graficodia6">
+                                <p class="dia6">63</p>
+                                <label for="">26</label>
+                            </div>
+                            <div class="graficodia7">
+                                <p class="dia7">33</p>
+                                <label for="">27</label>
+                            </div>
+                            <div class="graficodia8">
+                                <p class="dia8">68</p>
+                                <label for="">28</label>
+                            </div>
+                            <div class="graficodia9">
+                                <p class="dia9">45</p>
+                                <label for="">29</label>
+                            </div>
+                            <div class="graficodia10">
+                                <p class="dia10">14</p>
+                                <label for="">30</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="media_baixar">
+                    <h3>Média: 27.66 / <strong class="avaliacao">Ótimo</strong></h3>
+                    <div class="dowload">
+                        <h3>Baixar Relatório</h3>
+                        <figure>
+                            <a href=""><img class="dowload_button" src="img/dowload-1-svgrepo-com.svg" alt="dowload img">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="informacoes">
+                    <div class="filtro">
+                        <p>Filtrar por:</p>
+                        <div class="selecao1">
+                            <label for="">Mês</label>
+                            <select name="filtro1" id="filtro1">
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                            <label for="">Ano</label>
+                            <select name="filtro2" id="filtro2">
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <button class="btn_buscar1">Buscar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="conteudo3">
+            <h2 class="titulo">Média Diária Detalhada De Nivel De Ruido Por Ambiente  </h2>
+            <div class="relatorio2">
+                <div class="conteudografico">
+                    <div class="rotulo2">
+                        <h2>Filtrar por Ambiente</h2>
+                        <select name="" id="escolhaambiente1">
+                            <option value="Todos">Todos</option>
+                            <option value="UTI1">UTI</option>
+                            <option value="Emergencia1">Emergência</option>
+                            <option value="enfermagem1">Enfermagem</option>
+                            <option value="cirurgia1">Cirurgia</option>
+                        </select>
+                    </div>
+                    <div class="principalconteudo">
+                        <div class="caixa">
+                            <div class="nivelsom2">
+                                <label for="">80dB-</label>
+                                <label for="">70dB-</label>
+                                <label for="">60dB-</label>
+                                <label for="">50dB-</label>
+                                <label for="">40dB-</label>
+                                <label for="">30dB-</label>
+                                <label for="">20dB-</label>
+                                <label for="">10dB-</label>
+                                <label  for="">0dB-</label>
+                                <label class="rotuloinferior" for="">Hora</label>
+                            </div>
+                        </div>
+                        <div class="grafico3">
+                            <figure>
+                                <img class="graficolinhas" src="img/grafico6(1)(1).png" alt="graficoemhoras">
+                            </figure>
+                            <div class="rotulohoras">
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">10AM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">11AM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">12PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">13PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">14PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">15PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">16PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">17PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">18PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">19PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">20PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">21PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p>
+                                    <label for="">22PM</label>
+                                </div>
+                                <div class="divisaorotulo">
+                                    <p>|</p> 
+                                    <label for="">23PM</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media_baixar">
+                    <h3>Média: 34.69/ <strong class="avaliacao">Moderado</strong></h3>
+                    <div class="dowload">
+                        <h3>Baixar Relatório</h3>
+                        <figure>
+                            <a href=""><img class="dowload_button" src="img/dowload-1-svgrepo-com.svg" alt="dowload img">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="informacoes">
+                    <div class="filtro">
+                        <p>Filtrar Por Data:</p>
+                            <input type="datetime-local">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>©Todos direitos reservados.</p>
+    </footer>
+
+    <script src="js/mobile-navbar.js"></script>
+
+</body>
+
+</html>
